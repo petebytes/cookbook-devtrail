@@ -9,9 +9,20 @@
 
 #include_recipe "yum::yum"
 
-#include_recipe "yum::repoforge"
+#
+
+case node[:platform_family]
+  when "debian"
+    include_recipe "apt::default"
+  when "rhel"
+  	include_recipe "yum::default"
+  	include_recipe "yum::repoforge"
+  when "fedora"
+  	include_recipe "yum::default"
+end
 
 include_recipe "devtrail::user"
+include_recipe "devtrail::package"
 
 
 #python_virtualenv "/home/contrail/virtualenv" do
@@ -31,18 +42,7 @@ include_recipe "devtrail::user"
 # add kernel-devel to docs - mailing list: 
 # Pedro: "The kernel-devel package is required to compile the vrouter (linux kernel module)."
 
-case node[:platform_family]
-  when "debian"
-    execute "apt-get-update" do
-           command "apt-get update"
-           ignore_failure false
-    end
-    node[:devtrail][:package][:deb].each do |pkg|
-      package pkg do
-            action :install
-      end
-    end
-end
+
 
 template "/home/contrail/.gitconfig" do
 	source "gitconfig.erb"
