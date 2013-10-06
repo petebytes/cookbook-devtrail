@@ -8,7 +8,7 @@
 #
 
 #include_recipe "yum::yum"
-#include_recipe "yum::epel"
+
 #include_recipe "yum::repoforge"
 
 include_recipe "devtrail::user"
@@ -30,33 +30,19 @@ include_recipe "devtrail::user"
 
 # add kernel-devel to docs - mailing list: 
 # Pedro: "The kernel-devel package is required to compile the vrouter (linux kernel module)."
-# remove 'path', whatever that is
 
-node[:devtrail][:package][:ubuntu].each do |p|
-  	apt_package p do
-  		action :install
+case node[:platform_family]
+  when "debian"
+    execute "apt-get-update" do
+           command "apt-get update"
+           ignore_failure false
+    end
+    node[:devtrail][:package][:deb].each do |pkg|
+      package pkg do
+            action :install
+      end
     end
 end
-
-#%w{ wget gcc make unzip flex bison gcc-c++ python-pip python-setuptools python-virtualenv
-# python-lxml python-devel openssl-devel autoconf automake vim  }.each do |p|
-#  	yum_package p do
-#  		action :install
-#    end
-#end
-
-# todo: add development box packages (editors, lints, perf monitoring, etc.)
-
-#%w{git scons autoconf automake }.each do |p|
-#    yum_package p do
-#       action :install
-#       options '--enablerepo=rpmforge-extras'
-#    end
-#end
-
-
-# TODO: install newer scons from scons.org package
-
 
 template "/home/contrail/.gitconfig" do
 	source "gitconfig.erb"
@@ -79,8 +65,6 @@ cookbook_file "/usr/local/bin/repo" do
 	mode 0755
 	action :create
 end
-
-
 
 #include_recipe "rbenv::default"
 #include_recipe "rbenv::ruby_build"

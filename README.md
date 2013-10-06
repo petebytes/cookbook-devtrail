@@ -33,6 +33,10 @@ Called by default: creates user 'contrail' for a sandbox, and a clean Python vir
 
 See `attributes/default.rb` for default values.
 
+# Misc
+
+Uses Vagrant boxes from [Opscode's Bento Project](https://github.com/opscode/bento), and they're the same people that make Chef.  If you or your company want to use your own boxes, Bento is a good starting point!
+
 # Author
 
 Author:: John Deatherage (john@routeoflastresort.com)
