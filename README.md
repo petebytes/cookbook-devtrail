@@ -1,6 +1,8 @@
-# devtrail  [![Build Status](https://secure.travis-ci.org/routelastresort/cookbook-devtrail.png)](http://travis-ci.org/routelastresort/cookbook-devtrail)
+# devtrail
 
-Installs an [OpenContrail](http://opencontrail.org) development environment
+[![Build Status](https://secure.travis-ci.org/routelastresort/cookbook-devtrail.png)](http://travis-ci.org/routelastresort/cookbook-devtrail)
+
+Installs multiple [OpenContrail](http://opencontrail.org) builders / development environments
 
 # Requirements
 
@@ -16,8 +18,9 @@ Tested on Chef 11
 
 ## Platforms
 
-- Ubuntu 12.04 LTS
-- Centos and Fedora (coming soon)
+- Ubuntu 12.04 LTS and 13.04
+- Centos 6, and all Red Hat derivatives
+- Fedora 18 and 19
 
 # Recipes
 

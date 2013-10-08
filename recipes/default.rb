@@ -46,7 +46,7 @@ include_recipe "devtrail::package"
 
 template "/home/contrail/.gitconfig" do
 	source "gitconfig.erb"
-	mode 0664
+	mode "664"
 	owner "contrail"
 	group "contrail"
 	variables({
@@ -62,7 +62,7 @@ cookbook_file "/usr/local/bin/repo" do
 	source "repo"
 	owner "root"
 	group "root"
-	mode 0755
+	mode "755"
 	action :create
 end
 
