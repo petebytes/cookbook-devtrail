@@ -25,22 +25,22 @@
 # THE SOFTWARE.
 
 case node[:platform_family]
-  when "debian"
-    include_recipe "apt::default"
-  when "rhel"
-  	include_recipe "yum::default"
-  	include_recipe "yum::repoforge"
-  when "fedora"
-  	include_recipe "yum::default"
+when "debian"
+  include_recipe "apt::default"
+when "rhel"
+  include_recipe "yum::default"
+  include_recipe "yum::repoforge"
+when "fedora"
+  include_recipe "yum::default"
 end
 
 include_recipe "devtrail::user"
 include_recipe "devtrail::package"
 
 remote_file "/usr/local/bin/repo" do
-	source "http://commondatastorage.googleapis.com/git-repo-downloads/repo"
-	mode 00755
-	owner "root"
-	group "root"
-	checksum "e197cb48ff4ddda4d11f23940d316e323b29671c"
+  source "http://commondatastorage.googleapis.com/git-repo-downloads/repo"
+  mode 00755
+  owner "root"
+  group "root"
+  checksum "e197cb48ff4ddda4d11f23940d316e323b29671c"
 end
