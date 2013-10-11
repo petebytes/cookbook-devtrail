@@ -9,7 +9,7 @@ Installs an [OpenContrail](http://opencontrail.org) development environment
 * Ruby 1.9.3
 * [Vagrant](http://www.vagrantup.com/) 1.3.x / [VirtualBox](https://www.virtualbox.org/) 4.2.x
 * [Berkshelf](http://berkshelf.com/), and the [Vagrant Berkshelf Plugin](https://github.com/riotgames/vagrant-berkshelf)
-* [Vagrant Omnibus Plugin] to install 
+* [Vagrant Omnibus Plugin](https://github.com/schisamo/vagrant-omnibus) to bootstrap a Ruby+Chef environment within the Vagrant instances
 
 # Attributes
 
