@@ -1,5 +1,5 @@
-default[:devtrail][:github][:email]     = 'john@routeoflastresort.com'
-default[:devtrail][:github][:name]      = 'John Deatherage'
+default[:devtrail][:github][:email]     = 'githubemail@domain.com'
+default[:devtrail][:github][:name]      = 'Github Name'
 default[:devtrail][:build][:user]       = 'contrail'
 default[:devtrail][:build][:group]      = 'contrail'
 default[:devtrail][:build][:home]       = '/home/contrail'
