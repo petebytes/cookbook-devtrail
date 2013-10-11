@@ -12,9 +12,9 @@ Installs an [OpenContrail](http://opencontrail.org) development environment
 
 # Build TODO
 
-* devtrail::reposync - git-repo sync (needs keys)
-* devtrail::build - full build
-* Hmmmm, digital ocean builds?
+* `devtrail::reposync` - git-repo sync (needs keys)
+* `devtrail::build` - full build
+* Hmmmm, Digital Ocean builds?
 * Add compiler optimizations, will need to sync w/Vagrantfile through custom JSON
 
 # Testing / CI (non-Chef) TODO
@@ -22,9 +22,12 @@ Installs an [OpenContrail](http://opencontrail.org) development environment
 * Explore cloud services for best options
 * Will probably attack this from a separate project angle?
 
-# [Vagrantfile](Vagrantfile) TODO
+# Vagrant TODO
 
 * Debug issues with [Bento](https://github.com/opscode/bento) Fedora baseboxes (worked fine w/o Multi-Machine)
 * `chef.data_bags_path = "data_bags"`
 * Add RAM + CPU configuration
 * Add custom JSON for virtual hardware settings for compiler optimizations / performance upgrades
+* [digitalocean](https://github.com/smdahlen/vagrant-digitalocean), [Rackspace](https://github.com/mitchellh/vagrant-rackspace), or [AWS](https://github.com/mitchellh/vagrant-aws) support
+* [LXC](https://github.com/fgrehm/vagrant-lxc) or [OpenStack](https://github.com/cloudbau/vagrant-openstack-plugin) support
+* Support [VMware Workstation and Fusion](http://www.vagrantup.com/vmware) - make a feature request if you need this...

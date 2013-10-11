@@ -10,6 +10,7 @@ Installs an [OpenContrail](http://opencontrail.org) development environment
 
 * See the [TODO](docs/TODO.md) page for an idea of what's already being considered
 * Suggest your own ideas / needs
+* Don't have enough RAM or resources?  Suggest a cloud provider (preferably not $$$ Amazon $$$, unless you want to give me your account)
 
 ## Issues
 

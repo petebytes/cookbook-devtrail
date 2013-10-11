@@ -8,7 +8,7 @@ Installs multiple [OpenContrail](http://opencontrail.org) builders / development
 
 ## Chef
 
-Tested on Chef 11
+Tested on Chef 11.6.0
 
 ## Cookbooks
 
@@ -31,6 +31,10 @@ Installs the most basic dev environment needs from [Contrail's README](http://ju
 ## user
 
 Called by default: creates user 'contrail' for a sandbox, and (a clean Python virtualenv in `/home/contrail/virtualenv` / [TBD!](docs/TODO.md))
+
+## package
+
+Called by default: installs the base packages required for building Contrail, any required second-party repos (e.g. rpmforge), and any final dependencies (e.g. scons on RHEL/CentOS)
 
 # Attributes
 
