@@ -15,6 +15,7 @@ Tested on Chef 11
 - [apt](http://community.opscode.com/cookbooks/apt)
 - [yum](http://community.opscode.com/cookbooks/yum)
 - [python](http://community.opscode.com/cookbooks/python)
+- [user](http://community.opscode.com/cookbooks/user)
 
 ## Platforms
 
