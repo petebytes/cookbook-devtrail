@@ -1,5 +1,7 @@
 # Changelog
 
-## 0.1 (Sep 30, 2013)
+## 0.1.1 (Oct 11, 2013)
 
 * Initial public release
+
+
