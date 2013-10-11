@@ -31,7 +31,7 @@ Installs the most basic dev environment needs from [Contrail's README](http://ju
 
 ## user
 
-Called by default: creates user 'contrail' for a sandbox, and a clean Python virtualenv in `/home/contrail/virtualenv`.
+Called by default: creates user 'contrail' for a sandbox, and (a clean Python virtualenv in `/home/contrail/virtualenv` / TBD!)
 
 # Attributes
 
@@ -39,7 +39,9 @@ See `attributes/default.rb` for default values.
 
 # Misc
 
-Uses Vagrant boxes from [Opscode's Bento Project](https://github.com/opscode/bento), and they're the same people that make Chef.  If you or your company want to use your own boxes, Bento is a good starting point!
+Uses Vagrant boxes from [Opscode's Bento Project](https://github.com/opscode/bento), and they're the same people that make Chef.  If you or your company want to use your own boxes, Bento is a good starting point!  For now, I'm using [Puppet Labs' Fedora 18 box](http://puppet-vagrant-boxes.puppetlabs.com/), since I had some issues with Fedora 18 and 19 on Bento.  tl;dr: these boxes come from safe sources.
+
+- See the [Vagrant docs](doc/VAGRANT.md) for instructions on setting up Vagrant
 
 # License and Authors
 

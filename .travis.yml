@@ -13,4 +13,4 @@ script:
 #  - bundle exec rake rubocop
 notifications:
   email:
-    - notify@pimpmyrouter.com
+    - john@routeoflastresort.com
