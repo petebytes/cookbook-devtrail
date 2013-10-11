@@ -8,6 +8,7 @@ Installs an [OpenContrail](http://opencontrail.org) development environment
 
 * [Data Bags](http://docs.opscode.com/essentials_data_bags.html) for github SSH keys, and/or something easier for end users
 * Cookbook tests on every installed package and version
+* Clean python virtualenv for the contrail user
 
 # Build TODO
 

@@ -28,7 +28,7 @@ TODO: use a [Chef Data Bag](http://docs.opscode.com/essentials_data_bags.html) (
 4. Install berkshelf `gem install berkshelf --no-ri --no-rdoc` (you may need to `rbenv rehash` first, if you're running rbenv)
 5. Clone this repository `git clone https://github.com/routelastresort/cookbook-devtrail`
 6. Change to the directory of this repository
-7. `berks install` will install the required gems (you may need to `rbenv rehash` first, if you're running rbenv)
+7. `berks install` will install the required cookbooks (you may need to `rbenv rehash` first, if you're running rbenv)
 8. `vagrant up` to bring the VMs, or `vagrant up [centos6|precise|raring|fedora18]` to bring up individual VMs
 9. `vagrant ssh [centos6|precise|raring|fedora18]` to connect to the VMs via console
 

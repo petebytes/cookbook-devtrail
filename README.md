@@ -18,7 +18,7 @@ Tested on Chef 11
 
 ## Platforms
 
-- Ubuntu 12.04 LTS and 13.04
+- Ubuntu 12.04 LTS and 13.04 (stable and latest)
 - Centos 6, and all Red Hat derivatives
 - Fedora 18 and 19
 
@@ -30,7 +30,7 @@ Installs the most basic dev environment needs from [Contrail's README](http://ju
 
 ## user
 
-Called by default: creates user 'contrail' for a sandbox, and (a clean Python virtualenv in `/home/contrail/virtualenv` / TBD!)
+Called by default: creates user 'contrail' for a sandbox, and (a clean Python virtualenv in `/home/contrail/virtualenv` / [TBD!](docs/TODO.md))
 
 # Attributes
 
