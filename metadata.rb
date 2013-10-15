@@ -2,7 +2,7 @@ name             'devtrail'
 maintainer       'John Deatherage'
 maintainer_email 'john@routeoflastresort.com'
 license          'MIT'
-description      'Creates an OpenContrail development VM'
+description      'Creates an OpenContrail development and build VMs'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          '0.1.1'
 

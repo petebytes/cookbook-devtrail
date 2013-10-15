@@ -10,16 +10,10 @@ Installs multiple [OpenContrail](http://opencontrail.org) builders / development
 
 Tested on Chef 11.6.0
 
-## Cookbooks
-
-- [apt](http://community.opscode.com/cookbooks/apt)
-- [yum](http://community.opscode.com/cookbooks/yum)
-- [python](http://community.opscode.com/cookbooks/python)
-
 ## Platforms
 
 - Ubuntu 12.04 LTS and 13.04 (stable and latest)
-- Centos 6, and all Red Hat derivatives
+- Centos 6, RHEL6, and derivatives (Scientific, White Box, etc.)
 - Fedora 18 and 19
 
 # Recipes

@@ -26,8 +26,8 @@ Installs an [OpenContrail](http://opencontrail.org) development environment
 
 * Debug issues with [Bento](https://github.com/opscode/bento) Fedora baseboxes (worked fine w/o Multi-Machine)
 * `chef.data_bags_path = "data_bags"`
+* Make [LXC](https://github.com/fgrehm/vagrant-lxc) version for performance builds (needs boxes and packer love)
 * Add RAM + CPU configuration
 * Add custom JSON for virtual hardware settings for compiler optimizations / performance upgrades
-* [digitalocean](https://github.com/smdahlen/vagrant-digitalocean), [Rackspace](https://github.com/mitchellh/vagrant-rackspace), or [AWS](https://github.com/mitchellh/vagrant-aws) support
-* [LXC](https://github.com/fgrehm/vagrant-lxc) or [OpenStack](https://github.com/cloudbau/vagrant-openstack-plugin) support
+* [digitalocean](https://github.com/smdahlen/vagrant-digitalocean), [Rackspace](https://github.com/mitchellh/vagrant-rackspace), [AWS](https://github.com/mitchellh/vagrant-aws) or [OpenStack](https://github.com/cloudbau/vagrant-openstack-plugin) support
 * Support [VMware Workstation and Fusion](http://www.vagrantup.com/vmware) - make a feature request if you need this...
