@@ -8,7 +8,6 @@ Installs an [OpenContrail](http://opencontrail.org) development environment
 
 * [Data Bags](http://docs.opscode.com/essentials_data_bags.html) for github SSH keys, and/or something easier for end users
 * Cookbook tests on every installed package and version
-* Clean python virtualenv for the contrail user
 
 # Build TODO
 
@@ -24,10 +23,8 @@ Installs an [OpenContrail](http://opencontrail.org) development environment
 
 # Vagrant TODO
 
-* Debug issues with [Bento](https://github.com/opscode/bento) Fedora baseboxes (worked fine w/o Multi-Machine)
 * `chef.data_bags_path = "data_bags"`
-* Make [LXC](https://github.com/fgrehm/vagrant-lxc) version for performance builds (needs boxes and packer love)
-* Add RAM + CPU configuration
+* Make [LXC](https://github.com/fgrehm/vagrant-lxc) version for performance builds (needs boxes created)
 * Add custom JSON for virtual hardware settings for compiler optimizations / performance upgrades
-* [digitalocean](https://github.com/smdahlen/vagrant-digitalocean), [Rackspace](https://github.com/mitchellh/vagrant-rackspace), [AWS](https://github.com/mitchellh/vagrant-aws) or [OpenStack](https://github.com/cloudbau/vagrant-openstack-plugin) support
+* [digitalocean](https://github.com/smdahlen/vagrant-digitalocean), [Rackspace](https://github.com/mitchellh/vagrant-rackspace), [AWS](https://github.com/mitchellh/vagrant-aws) and/or [OpenStack](https://github.com/cloudbau/vagrant-openstack-plugin) support
 * Support [VMware Workstation and Fusion](http://www.vagrantup.com/vmware) - make a feature request if you need this...

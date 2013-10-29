@@ -8,11 +8,11 @@ Installs multiple [OpenContrail](http://opencontrail.org) builders / development
 
 ## Chef
 
-Tested on Chef 11.6.0
+Tested on Chef 11.6.0, other recent versions may have no issues
 
 ## Platforms
 
-- Ubuntu 12.04 LTS and 13.04 (stable and latest)
+- Ubuntu 12.04 LTS through 13.10 (stable and latest)
 - Centos 6, RHEL6, and derivatives (Scientific, White Box, etc.)
 - Fedora 18 and 19
 
@@ -36,9 +36,7 @@ See `attributes/default.rb` for default values.
 
 # Misc
 
-Uses Vagrant boxes from [Opscode's Bento Project](https://github.com/opscode/bento), and they're the same people that make Chef.  If you or your company want to use your own boxes, Bento is a good starting point!  For now, I'm using [Puppet Labs' Fedora 18 box](http://puppet-vagrant-boxes.puppetlabs.com/), since I had some issues with Fedora 18 and 19 on Bento.
-
-(*tl;dr*: these boxes come from safe sources)
+Uses Vagrant boxes from [Opscode's Bento Project](https://github.com/opscode/bento), and they're the same people that make Chef.  If you or your company want to use your own boxes, Bento is a good starting point!  If you use this project, the downloads come directly from Opscode.
 
 - See the [Vagrant docs](docs/VAGRANT.md) for instructions on setting up Vagrant
 

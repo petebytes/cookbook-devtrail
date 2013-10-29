@@ -2,6 +2,12 @@
 # vi: set ft=ruby :
 VAGRANTFILE_API_VERSION = "2"
 
+require "vagrant"
+
+if Vagrant::VERSION < "1.2.1"
+  raise "devtrail requires Vagrant 1.2.x or higher"
+end
+
 # TODO: make sure systems have 1GB of RMA by default
 builders = [
   { name: "centos6",
@@ -20,10 +26,10 @@ builders = [
     box: "opscode-ubuntu-12.04",
     url: "https://opscode-vm-bento.s3.amazonaws.com/vagrant/opscode_ubuntu-12.04_provisionerless.box",
     ssh_port: 2004 },
-  { name: "raring",
-    box: "opscode-ubuntu-13.04",
-    url: "https://opscode-vm-bento.s3.amazonaws.com/vagrant/opscode_ubuntu-12.04_provisionerless.box",
-    ssh_port: 2005 }
+  { name: "saucy",
+    box: "opscode-ubuntu-13.10",
+    url: "https://opscode-vm-bento.s3.amazonaws.com/vagrant/opscode_ubuntu-13.10_provisionerless.box",
+    ssh_port: 2005 },
 ]
 
 
@@ -39,6 +45,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       config.vm.boot_timeout = 120
       config.berkshelf.enabled = true
       config.vm.network "forwarded_port", guest: 22, host: opts[:ssh_port], id: "ssh", auto_correct: true
+    end
+    config.vm.provider :virtualbox do |vb|
+      vb.customize ["modifyvm", :id, "--memory", "1024"]
+      vb.customize ["modifyvm", :id, "--cpus", "2"] 
     end
   end
 
